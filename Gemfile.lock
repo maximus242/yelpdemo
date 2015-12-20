@@ -147,6 +147,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mini_magick
+  nokogiri
   pg
   rails (= 4.1.8)
   rails_12factor
