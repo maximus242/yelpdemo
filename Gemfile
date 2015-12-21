@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
 ruby '2.1.5'
-# Adding Nokogiri
-gem "nokogiri"
+
+gem "nokogiri", ">= 1.6.7.rc"
+# Devise Gem for User Accounts
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
@@ -14,7 +16,9 @@ gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails'
+# Fixing CoffeeScript Precompilation Error
+gem 'coffee-script-source', '1.8.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 # MiniMagick to work with ImageMagick to resize images
@@ -23,8 +27,8 @@ gem "mini_magick"
 gem "figaro"
 #Carrierwave Gem for Images
 gem 'carrierwave'
-#Fog for integerating Amazon S3 with Carrierwave
-gem "fog", "~> 1.3.1"
+
+gem 'fog'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
