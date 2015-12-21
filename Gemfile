@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.1.5'
-
+gem 'devise'
 gem "nokogiri", ">= 1.6.7.rc"
 # Devise Gem for User Accounts
 gem 'devise'
