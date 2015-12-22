@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:edit, :update, :destroy]
   before_action :set_restaurant
+   before_action :authenticate_user!
 
   respond_to :html
 
@@ -18,7 +19,7 @@ class ReviewsController < ApplicationController
 @review.restaurant_id = @restaurant.id
 
 flash[:notice] = "Review was successfully created." if @review.save
-respond_with(@review, :location => root_path) 
+respond_with(@review, :location => @restaurant) 
   end
 
   def update
