@@ -12,4 +12,9 @@
  *
  *= require_tree .
  *= require_self
- */
+ *= require custom
+ *= require restaurants
+ *= require reviews
+ *= require scaffolds
+ *= require pages
+ *= require_tree .
